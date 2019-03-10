@@ -23,3 +23,9 @@ setupUserPresencePreload();
 
 window.reloadServer = () => ipcRenderer.sendToHost('reload-server');
 window.i18n = i18n;
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    var script = document.createElement("script");
+    script.src = 'https://userstyles.org/styles/userjs/133150/rocketchat-dark.user.js';
+    document.body.appendChild(script);
+});
